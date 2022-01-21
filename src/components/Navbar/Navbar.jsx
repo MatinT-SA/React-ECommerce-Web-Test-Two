@@ -18,7 +18,7 @@ function Navbar({ totalItems }) {
                         Matin.js
                     </Typography>
                     <div className={classes.grow} />
-                    {location.pathname == "/" && (
+                    {location.pathname === "/" && (
                         <div className={classes.button}>
                             <IconButton component={Link} to="/cart" aria-label="Show Cards Items" color="inherit">
                                 <Badge badgeContent={totalItems} color="secondary">
